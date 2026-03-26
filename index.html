@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PHXSKF7Q');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magic Drag — AI Reply Generator</title>
+    <meta name="description" content="Drag to select text, get 3 AI-powered replies instantly. Works on any website." />
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHXSKF7Q"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header>
+    <div class="container">
+        <nav class="nav">
+            <a href="index.html" class="logo">
+                <img src="icon-128.png" alt="Magic Drag" />
+                Magic Drag
+            </a>
+            <div style="display:flex;align-items:center;gap:16px;">
+                <div class="lang-toggle">
+                    <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+                    <button class="lang-btn" id="btn-ko" onclick="setLang('ko')">KO</button>
+                </div>
+                <a href="#" class="nav-cta" data-en="Install Free" data-ko="무료 설치">Install Free</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<main>
+    <div style="background: var(--bg-section);">
+        <div class="container">
+            <section class="hero">
+                <div class="hero-badge" data-en="Chrome Extension" data-ko="크롬 확장 프로그램">Chrome Extension</div>
+                <h1 data-en="One drag.<br>Three AI replies.<br>Instantly." data-ko="드래그 한 번.<br>AI 답변 3개.<br>즉시.">One drag.<br>Three AI replies.<br>Instantly.</h1>
+                <p data-en="Tired of typing the same replies to comments, DMs, and customer inquiries? Just drag to select any text — AI suggests 3 context-aware replies instantly."
+                   data-ko="댓글, DM, 고객 문의마다 같은 답변 쓰느라 지치셨나요? 텍스트를 드래그하면 AI가 상황에 맞는 답변 3개를 즉시 추천합니다.">
+                    Tired of typing the same replies to comments, DMs, and customer inquiries? Just drag to select any text — AI suggests 3 context-aware replies instantly.
+                </p>
+                <div class="hero-btns">
+                    <a href="#" class="btn-primary" data-en="Install on Chrome — Free" data-ko="크롬에 무료 설치">Install on Chrome — Free</a>
+                    <a href="#how" class="btn-secondary" data-en="See how it works" data-ko="작동 방식 보기">See how it works</a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- ===== WHO IS IT FOR ===== -->
+    <div class="container">
+        <section id="who">
+            <div class="section-label" data-en="Who is it for" data-ko="이런 분들을 위해">Who is it for</div>
+            <h2 class="section-title" data-en="Built for anyone who replies online" data-ko="온라인에서 답변하는 모든 분을 위해">Built for anyone who replies online</h2>
+            <p class="section-sub" data-en="Works on any website — Instagram, Amazon, email, Shopify, and more."
+               data-ko="어떤 웹사이트에서든 동작합니다 — 인스타그램, 쿠팡, 이메일, 스마트스토어 등.">
+                Works on any website — Instagram, Amazon, email, Shopify, and more.
+            </p>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-icon">🛒</div>
+                    <h3 data-en="E-commerce Sellers &amp; CS Teams" data-ko="쇼핑몰 운영자 &amp; CS 담당자">E-commerce Sellers &amp; CS Teams</h3>
+                    <p data-en='"When will my order arrive?" Stop typing the same answers. Just drag and reply in seconds.'
+                       data-ko='"배송 언제 오나요?" 반복되는 문의, 드래그 한 번으로 즉시 답변하세요.'>
+                        "When will my order arrive?" Stop typing the same answers. Just drag and reply in seconds.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌟</div>
+                    <h3 data-en="Influencers &amp; Creators" data-ko="인플루언서 &amp; 크리에이터">Influencers &amp; Creators</h3>
+                    <p data-en="Fan comments, sponsorship inquiries, DMs — Reply fast in your own voice with persona settings."
+                       data-ko="팬 댓글, 협찬 문의, DM — 나만의 페르소나 설정으로 빠르게 소통하세요.">
+                        Fan comments, sponsorship inquiries, DMs — Reply fast in your own voice with persona settings.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💬</div>
+                    <h3 data-en="Anyone Who Replies Online" data-ko="답변이 필요한 누구든">Anyone Who Replies Online</h3>
+                    <p data-en="Email, reviews, forums, messengers — Magic Drag works wherever you can select text in Chrome."
+                       data-ko="이메일, 리뷰, 메신저 — 크롬에서 텍스트를 선택할 수 있는 곳이면 어디든 동작합니다.">
+                        Email, reviews, forums, messengers — Magic Drag works wherever you can select text in Chrome.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <div style="background: var(--bg-section);">
+        <div class="container">
+            <section id="how">
+                <div class="section-label" data-en="How it works" data-ko="작동 방식">How it works</div>
+                <h2 class="section-title" data-en="3 steps. Done." data-ko="3단계면 끝.">3 steps. Done.</h2>
+                <p class="section-sub" data-en="No copy-paste. No switching tabs. Just drag and reply."
+                   data-ko="복사 붙여넣기 없이. 탭 전환 없이. 드래그하고 답변하세요.">
+                    No copy-paste. No switching tabs. Just drag and reply.
+                </p>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-num">1</div>
+                        <div class="step-content">
+                            <h3 data-en="Drag" data-ko="드래그">Drag</h3>
+                            <p data-en="Select any text you want to reply to — a comment, inquiry, or message."
+                               data-ko="답변하고 싶은 텍스트를 마우스로 선택하세요 — 댓글, 문의, 메시지 무엇이든.">
+                                Select any text you want to reply to — a comment, inquiry, or message.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-num">2</div>
+                        <div class="step-content">
+                            <h3 data-en="Click" data-ko="클릭">Click</h3>
+                            <p data-en="Click the Magic Drag icon that appears next to your selection."
+                               data-ko="선택한 텍스트 옆에 나타나는 Magic Drag 아이콘을 클릭합니다.">
+                                Click the Magic Drag icon that appears next to your selection.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-num">3</div>
+                        <div class="step-content">
+                            <h3 data-en="Copy &amp; Paste" data-ko="복사 &amp; 붙여넣기">Copy &amp; Paste</h3>
+                            <p data-en="Pick your favorite from 3 AI-suggested replies and paste it."
+                               data-ko="AI가 추천한 답변 3개 중 마음에 드는 걸 골라 붙여넣으세요.">
+                                Pick your favorite from 3 AI-suggested replies and paste it.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- ===== CUSTOMIZE ===== -->
+    <div class="container">
+        <section id="customize">
+            <div class="section-label" data-en="Customize" data-ko="맞춤 설정">Customize</div>
+            <h2 class="section-title" data-en="Replies that sound like you" data-ko="나를 닮은 답변 스타일">Replies that sound like you</h2>
+            <p class="section-sub" data-en="Set your tone, language, and persona — AI replies in your style. Powered by Google Gemini."
+               data-ko="톤, 언어, 페르소나를 설정하면 — AI가 나의 스타일로 답변합니다. (Google Gemini 기반)">
+                Set your tone, language, and persona — AI replies in your style. Powered by Google Gemini.
+            </p>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-icon">🎨</div>
+                    <h3 data-en="Tone" data-ko="톤">Tone</h3>
+                    <p data-en="Casual · Business · SNS · Humor" data-ko="캐주얼 · 비즈니스 · SNS · 유머">Casual · Business · SNS · Humor</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌐</div>
+                    <h3 data-en="Language" data-ko="언어">Language</h3>
+                    <p data-en="Auto-detect · English · Korean · Japanese" data-ko="자동감지 · 한국어 · English · 日本語">Auto-detect · English · Korean · Japanese</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎭</div>
+                    <h3 data-en="Persona" data-ko="페르소나">Persona</h3>
+                    <p data-en='Set freely — e.g. "E-commerce CS agent", "Beauty influencer"'
+                       data-ko='자유롭게 설정 — 예: "쇼핑몰 CS 담당자", "뷰티 인플루언서"'>
+                        Set freely — e.g. "E-commerce CS agent", "Beauty influencer"
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===== PRICING ===== -->
+    <div style="background: var(--bg-section);">
+        <div class="container">
+            <section id="pricing">
+                <div class="section-label" data-en="Pricing" data-ko="요금제">Pricing</div>
+                <h2 class="section-title" data-en="Start free. Upgrade when you need to." data-ko="무료로 시작하세요.">Start free. Upgrade when you need to.</h2>
+                <div class="pricing-grid">
+                    <div class="plan featured">
+                        <div class="plan-badge" data-en="Most Popular" data-ko="가장 인기">Most Popular</div>
+                        <div class="plan-name" data-en="Free" data-ko="무료">Free</div>
+                        <div class="plan-price">$0 <span data-en="/ forever" data-ko="/ 영구 무료">/ forever</span></div>
+                        <ul>
+                            <li data-en="30 replies per day" data-ko="하루 30회 답변 생성">30 replies per day</li>
+                            <li data-en="Tone, language &amp; persona settings" data-ko="톤 · 언어 · 페르소나 설정">Tone, language &amp; persona settings</li>
+                            <li data-en="Works on all websites" data-ko="모든 웹사이트에서 사용">Works on all websites</li>
+                            <li data-en="Google sign-in" data-ko="Google 로그인">Google sign-in</li>
+                        </ul>
+                        <a href="#" class="plan-cta" data-en="Install Free" data-ko="무료 설치">Install Free</a>
+                    </div>
+                    <div class="plan">
+                        <div class="plan-name">Pro</div>
+                        <div class="plan-price" style="color:var(--text-muted);font-size:20px;" data-en="Coming soon" data-ko="준비 중">Coming soon</div>
+                        <ul>
+                            <li data-en="Unlimited replies" data-ko="무제한 답변 생성">Unlimited replies</li>
+                            <li data-en="Smarter AI model" data-ko="더 스마트한 AI 모델">Smarter AI model</li>
+                            <li data-en="Priority support" data-ko="우선 지원">Priority support</li>
+                        </ul>
+                        <a href="https://docs.google.com/forms/d/1yEX9Ve772rPgY0Jm29MLLV_fGbk416VakfeSkELGk9g/viewform"
+                           class="plan-cta outline"
+                           data-en="Notify me when Pro launches"
+                           data-ko="Pro 출시 알림 신청"
+                           data-href-en="https://docs.google.com/forms/d/1yEX9Ve772rPgY0Jm29MLLV_fGbk416VakfeSkELGk9g/viewform"
+                           data-href-ko="https://docs.google.com/forms/d/1X2hNuyZ5ndB8QAky4KN_8Meeg6-AsmJ-VPmFSxUT4O0/viewform"
+                           target="_blank">Notify me when Pro launches</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- ===== FAQ ===== -->
+    <div class="container">
+        <section id="faq">
+            <div class="section-label">FAQ</div>
+            <h2 class="section-title" data-en="Frequently Asked Questions" data-ko="자주 묻는 질문">Frequently Asked Questions</h2>
+            <div class="faq">
+                <div class="faq-item">
+                    <h3 data-en="What websites does it work on?" data-ko="어떤 웹사이트에서 사용할 수 있나요?">What websites does it work on?</h3>
+                    <p data-en="Any website where you can select text in Chrome — Instagram, Amazon, Shopify, Gmail, and more."
+                       data-ko="크롬에서 텍스트를 선택할 수 있는 모든 웹사이트 — 인스타그램, 쿠팡, 스마트스토어, Gmail 등.">
+                        Any website where you can select text in Chrome — Instagram, Amazon, Shopify, Gmail, and more.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 data-en="Can I use it without signing up?" data-ko="회원가입 없이도 쓸 수 있나요?">Can I use it without signing up?</h3>
+                    <p data-en="Yes — 5 free uses right after installation. Sign up with Google to get 30 uses per day."
+                       data-ko="네, 설치 직후 5회까지 바로 사용할 수 있습니다. Google 로그인 후 하루 30회까지 사용 가능합니다.">
+                        Yes — 5 free uses right after installation. Sign up with Google to get 30 uses per day.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 data-en="Is my selected text stored?" data-ko="내가 선택한 텍스트가 저장되나요?">Is my selected text stored?</h3>
+                    <p data-en="Temporarily retained for quality improvement and deleted after 90 days. We never use your data to train AI models."
+                       data-ko="품질 개선을 위해 90일간 일시 보관 후 자동 삭제됩니다. 사용자의 데이터는 AI 학습에 절대 활용되지 않으니 안심하고 사용하세요.">
+                        Temporarily retained for quality improvement and deleted after 90 days. We never use your data to train AI models.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 data-en="Does it support languages other than English?" data-ko="영어 이외 언어도 지원하나요?">Does it support languages other than English?</h3>
+                    <p data-en="Yes — Korean, English, and Japanese. Auto-detect mode matches the language of the selected text."
+                       data-ko="네, 한국어·영어·일본어를 지원합니다. 자동 감지 모드를 사용하면 선택한 텍스트의 언어에 맞춰 답변합니다.">
+                        Yes — Korean, English, and Japanese. Auto-detect mode matches the language of the selected text.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===== CTA BANNER ===== -->
+    <section class="cta-banner">
+        <h2 data-en="Start replying smarter today." data-ko="지금 바로 스마트하게 답변하세요.">Start replying smarter today.</h2>
+        <p data-en="Free forever. No credit card needed." data-ko="영구 무료. 카드 등록 불필요.">Free forever. No credit card needed.</p>
+        <a href="#" class="btn-white" data-en="Install on Chrome — Free" data-ko="크롬에 무료 설치">Install on Chrome — Free</a>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="privacy.html" data-en="Privacy Policy" data-ko="개인정보 처리방침">Privacy Policy</a>
+            <a href="mailto:kun.dev.lab@gmail.com">kun.dev.lab@gmail.com</a>
+        </div>
+        <p>© 2026 Magic Drag. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    const ko = ['ko', 'ko-KR', 'ko-kr'];
+    let currentLang = ko.includes(navigator.language) ? 'ko' : 'en';
+
+    function applyLang(lang) {
+        currentLang = lang;
+        document.documentElement.lang = lang;
+
+        document.querySelectorAll('[data-en][data-ko]').forEach(el => {
+            const val = el.getAttribute('data-' + lang);
+            if (val !== null) el.innerHTML = val;
+        });
+
+        document.querySelectorAll('[data-href-en][data-href-ko]').forEach(el => {
+            const href = el.getAttribute('data-href-' + lang);
+            if (href) el.setAttribute('href', href);
+        });
+
+        document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+        document.getElementById('btn-ko').classList.toggle('active', lang === 'ko');
+    }
+
+    function setLang(lang) {
+        localStorage.setItem('md_lang', lang);
+        applyLang(lang);
+    }
+
+    const saved = localStorage.getItem('md_lang');
+    applyLang(saved || currentLang);
+</script>
+</body>
+</html>
